@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bege: #E4CDB8; /* Fundo principal */
+    --creme: #E8D6C4; /* Seções e cards */
+    --bege-escuro: #CFB59D; /* Bordas, detalhes e fundos secundários */
+    --marrom: #463625; /* Textos principais */
+    --marrom-escuro: #241B13; /* Títulos e elementos de maior constraste */
+    --laranja: #AF6028; /* Destaques, botões e títulos */
+    --marrom-medio: #6D5C4B; /* Textos secundários */
+    --dourado: #CF996B; /* Detalhes decorativos */
+}
+
+body {
+    background-color: var(--bege-escuro);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.produto {
+    background-color: #fff1e4;
+    width: 220px;
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.produto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px #241B13;
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+.produto h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    color: var(--dourado);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+summary {
+    list-style: none;
+    color: #443232;
+}
+
